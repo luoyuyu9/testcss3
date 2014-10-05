@@ -23,13 +23,20 @@ body{
 	overflow: hidden;
     text-align: center;
 	width:100%;
-	height:768px;
+	height:850px;
+	cursor: default;
 }
-
+h1{
+	font-size: 70px;
+    position: absolute;
+    top: 100px;
+    color: white;
+    font-weight: normal;
+}
 /*背景*/
 #bground{
 	width: 100%;
-    height: 768px;
+    height: 850px;
     position: absolute;
     overflow: hidden;
 }
@@ -178,11 +185,29 @@ body{
 #skills, #works{
 	left:100px;
 }
-#intro, #skills, #works{
-	font-size: 70px;
-    position: absolute;
-    top: 100px;
-    color: white;
+#intro_wrapper{
+	position: absolute;
+    top: 350px;
+    text-align: center;
+}
+#intro_wrapper>p{
+	float:left;
+}
+.rho{
+	width: 48px;
+    height: 48px;
+    display: block;
+    float: left;
+    margin-right:20px;
+}
+.r1{
+    background: url(../img/90.png);
+}
+.r2{
+	background: url(../img/hobby.png);
+}
+.r3{
+	background: url(../img/goal.png);
 }
 hr{
     height:5px;
@@ -193,6 +218,35 @@ hr{
 	background:white;
     background:-webkit-linear-gradient(left,rgba(255,255,255,0),white,rgba(255,255,255,0));
     background:-moz-linear-gradient(left,rgba(255,255,255,0),white,rgba(255,255,255,0));
+}
+#sketch{
+	position: absolute;
+    top: 310px;
+    width: 400px;
+    word-wrap: break-word;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+}
+#sketch>p{
+	margin-bottom: 20px;
+}
+.wrapper{
+	margin-bottom: 40px;
+}
+.wrapper>p{
+	color: white;
+    font-size: 30px;
+    height: 47px;
+    line-height: 47px;
+    text-align: left;
+}
+.clearfix:after{
+	clear:both;
+	content:'';
+	height:0;
+	display:block;
+	visibility: hidden;
 }
 /*导航条*/
 #sidenav{
