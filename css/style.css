@@ -23,7 +23,7 @@ body{
 	overflow: hidden;
     text-align: center;
 	width:100%;
-	height:850px;
+	height:768px;
 	cursor: default;
 }
 h1{
@@ -36,7 +36,7 @@ h1{
 /*背景*/
 #bground{
 	width: 100%;
-    height: 850px;
+    height: 768px;
     position: absolute;
     overflow: hidden;
 }
@@ -173,7 +173,7 @@ h1{
 /*页面内容部分*/
 #page1, #page2, #page3{
 	position: absolute;
-    width: 960px;
+    width: 1024px;
     height: 768px;
     top: 50%;
     left: 50%;
@@ -230,6 +230,48 @@ hr{
 }
 #sketch>p{
 	margin-bottom: 20px;
+}
+#myskills{
+	position: absolute;
+	width:480px;
+	height:480px;
+	top:50%;
+	left:50%;
+	margin-left: 30px;
+    margin-top: -203px;
+}
+#myskills>div{
+	display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 0 30px 30px 0;
+}
+.s1{
+	background: url('../img/icons.png') no-repeat 0 0;
+}
+.s2{
+	background: url('../img/icons.png') no-repeat -120px 0;
+}
+.s3{
+	background: url('../img/icons.png') no-repeat -240px 0;
+}
+.s4{
+	background: url('../img/icons.png') no-repeat -360px 0;
+}
+.s5{
+	background: url('../img/icons.png') no-repeat -480px 0;
+}
+.s6{
+	background: url('../img/icons.png') no-repeat -600px 0;
+}
+.s7{
+	background: url('../img/icons.png') no-repeat -720px 0;
+}
+.s8{
+	background: url('../img/icons.png') no-repeat -840px 0;
+}
+.s9{
+	background: url('../img/icons.png') no-repeat -960px 0;
 }
 .wrapper{
 	margin-bottom: 40px;
