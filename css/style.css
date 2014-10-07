@@ -273,6 +273,69 @@ hr{
 .s9{
 	background: url('../img/icons.png') no-repeat -960px 0;
 }
+#demo{
+	position: absolute;
+	width:390px;
+	height:380px;
+	top:50%;
+	left:50%;
+	margin-top:-150px;
+	margin-left: -500px;
+}
+#chatdemo>h2{
+	position: absolute;
+    top: 100%;
+    left: 12%;
+    color: white;
+}
+#demo>h2{
+	position: absolute;
+    top: 100%;
+    left: 26%;
+    color: white;
+    margin-top: 20px;
+}
+.demo1, .demo2{
+	position:absolute;
+	left: 8%;
+	border:2px solid white;
+}
+.demo2{
+    top: 52%;
+    margin-top: 2px;
+}
+#chatdemo{
+	position: absolute;
+	width:450px;
+	height:400px;
+	top:50%;
+	left:50%;
+	margin-top:-150px;
+}
+#chatdemo>a>img, #demo>a>img{
+	border: 6px solid white;
+    border-radius: 6px;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s;
+}
+#chatdemo>a>img:hover{
+    transform:scale(1.5);
+    z-index:100;
+}
+.demo3, .demo4{
+	position:absolute;
+	width:200px;
+	height:360px;
+}
+.demo3{
+	top:0;
+	left:0;	
+}
+.demo4{
+	top:0;
+	right:0;
+}
 .wrapper{
 	margin-bottom: 40px;
 }
@@ -282,6 +345,17 @@ hr{
     height: 47px;
     line-height: 47px;
     text-align: left;
+}
+.divider{
+	position: absolute;
+    top: 30%;
+    left: 41%;
+	height:380px;
+	width:5px;
+	background: white; 
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0),white,rgba(255,255,255,0));
+    background: -moz-linear-gradient(top,rgba(255,255,255,0),white,rgba(255,255,255,0));
+}
 }
 .clearfix:after{
 	clear:both;
