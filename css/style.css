@@ -182,11 +182,18 @@ h1{
     perspective: 1000px;
     -webkit-perspective: 1000px;
 }
-#page3{
+#page2,#page3{
 	visibility: hidden;
+}
+#page3{
+	opacity:0;
 }
 #skills, #works{
 	left:100px;
+	opacity:0;
+}
+#skills hr,#works hr{
+    opacity:0;
 }
 #intro_wrapper{
 	position: absolute;
@@ -234,6 +241,7 @@ hr{
 }
 #sketch>p{
 	margin-bottom: 20px;
+	opacity:0;
 }
 #myskills{
 	position: absolute;
@@ -251,30 +259,39 @@ hr{
 }
 .s1{
 	background: url('../img/icons.png') no-repeat 0 0;
+	opacity:0;
 }
 .s2{
 	background: url('../img/icons.png') no-repeat -120px 0;
+	opacity:0;
 }
 .s3{
 	background: url('../img/icons.png') no-repeat -240px 0;
+	opacity:0;
 }
 .s4{
 	background: url('../img/icons.png') no-repeat -360px 0;
+	opacity:0;
 }
 .s5{
 	background: url('../img/icons.png') no-repeat -480px 0;
+	opacity:0;
 }
 .s6{
 	background: url('../img/icons.png') no-repeat -600px 0;
+	opacity:0;
 }
 .s7{
 	background: url('../img/icons.png') no-repeat -720px 0;
+	opacity:0;
 }
 .s8{
 	background: url('../img/icons.png') no-repeat -840px 0;
+	opacity:0;
 }
 .s9{
 	background: url('../img/icons.png') no-repeat -960px 0;
+	opacity:0;
 }
 #demo{
 	position: absolute;
@@ -290,6 +307,7 @@ hr{
     top: 98%;
     left: 12%;
     color: white;
+    opacity:0;
 }
 #demo>h2{
 	position: absolute;
@@ -297,6 +315,7 @@ hr{
     left: 26%;
     color: white;
     margin-top: 20px;
+    opacity:0;
 }
 .demo1, .demo2{
 	position:absolute;

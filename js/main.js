@@ -1,3 +1,7 @@
+/*
+developed by Luo Yu
+October 3th 2014
+*/
 playing=false;
 playingduration = 1500;
 page=0;
@@ -6,7 +10,7 @@ initial=true;
 var scrollFunc=function(event){ 
     event=event || window.event; 
     if (!playing) {
-    	if (event.wheelDelta<0 || event.detail> 0) {
+    	if (event.wheelDelta<0 || event.detail> 0) { //event.detail 是火狐
     		motion(true);
     	}else if(event.wheelDelta>0 || event.detail<0){
     		motion(false);
@@ -37,6 +41,7 @@ function playingdelay(){
 }
 //按小按钮翻页
 function changepage(pg){
+	    page=pg;
 		core(pg);
 		playingdelay();
 }
@@ -45,7 +50,7 @@ function motion (direction) {
 	if (direction == true) {
 		if (page == 2) {
 			page = 0;
-			core(0);
+			core(page);
 			playingdelay();
 		}else{
 			page += 1;
@@ -55,7 +60,7 @@ function motion (direction) {
 	}else{
 		if(page==0){
 			page = 2;
-			core(2);
+			core(page);
 			playingdelay();
 		}else{ 
 			page -= 1;
@@ -91,7 +96,7 @@ function core (page){
     	    $('#page3').css('visibility','hidden');
     },1000)
 
-    //page1 init && back
+    //page1 back
 		$('#intro').velocity({opacity:0,rotateX:'720deg'},{duration:0});
 		$('#page1 hr').velocity({opacity:0,rotateY:'360deg'},{duration:0});
 		$('.intro1,.intro2,.intro3').velocity({opacity:0,translateY:1000},{duration:0});
