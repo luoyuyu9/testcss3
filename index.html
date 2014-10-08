@@ -22,7 +22,7 @@
 </head>
 <body>
 <section id="main">
-  <div id=bground>
+  <div id="bground">
     <div class="b1 round"></div>
     <div class="b2 round"></div>
     <div class="b3 round"></div>
@@ -32,27 +32,27 @@
     <div class="b7 round"></div>
     <div class="b8 round"></div>
   </div>
-  <div id="page1" style="display:none;">
+  <div id="page1">
     <h1 id="intro">Introduction</h1>
     <hr>
     <div id="intro_wrapper">
       <div class="wrapper clearfix">
-        <p><span class="rho r1"></span>I'm one of the post-90s.</p>
+        <span class="rho r1"></span><p class="intro1">I'm one of the post-90s.</p>
       </div>
       <div class="wrapper clearfix">
-        <p><span class="rho r2"></span>Like to learn knowledge of programming.</p>
+        <span class="rho r2"></span><p class="intro2">Fond of learning programming languages.</p>
       </div>
       <div class="wrapper clearfix">
-        <p><span class="rho r3"></span>Pursue excellent web design and user experience.</p>
+        <span class="rho r3"></span><p class="intro3">Pursue excellent web design and user experience.</p>
       </div>
     </div>
   </div>
-  <div id="page2" style="display:none;">
+  <div id="page2">
     <h1 id="skills">Skills</h1>
     <hr>
     <div id="sketch">
       <p>I'm interested in programming languages such as CSS, Js and PHP.</p> 
-      <p>It's a fascinating thing to learn new knowledge.</p>  
+      <p>It's a fascinating thing to learn new things.</p>  
       <p>Creating visually appealing sites that feature user-friendly design and easy navigation is my target.</p>
     </div>
     <div id="myskills">
@@ -71,10 +71,10 @@
     <h1 id="works">Works</h1>
     <hr>
     <div id="demo">
-      <a href="../index.html" target="_blank">
+      <a href="203.195.206.236" target="_blank">
         <img class="demo1" src="./img/demo1.jpg"/>
       </a>
-      <a href="../haochigou/index.html" target="_blank">
+      <a href="203.195.206.236/haochigou/" target="_blank">
         <img class="demo2" src="./img/demo2.jpg"/>
       </a>
       <h2>Bootstrap | Ajax</h2>
@@ -93,10 +93,11 @@
 </section>
 <section>
   <div id="sidenav">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
+    <div class="dot on" onclick="changepage(0)" datapage="0"></div>
+    <div class="dot" onclick="changepage(1)" datapage="1"></div>
+    <div class="dot" onclick="changepage(2)" datapage="2"></div>
   </div>
+  <div id="scrolling" onclick="motion(true)">SCROLL<span></span></div>
 </section> 
 </body>
 </html>
